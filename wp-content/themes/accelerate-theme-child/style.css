@@ -12,6 +12,19 @@
 
 @import url("../accelerate-theme/style.css");
 
+/**********
+    Nav
+*********/
+#masthead nav ul li {
+    margin-right:  15px;
+/*These styles below keep nav pages at correct height. Do not change */
+    float:  left;
+    top:  0;
+}
+#masthead nav ul { 
+    border: 1px solid transparent;
+}
+/* END above note */
 /**************** 
     Homepage Styles 
 **************/
@@ -46,3 +59,31 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+/* Case Studies Styles */
+
+.case-study-sidebar {
+    float:  left;
+    width:  300px;
+    margin-right: 52px;
+}
+.case-study-sidebar .case-study-caption {
+    font-size:  0.9em;
+    color:  #a4a4a4;
+    margin: 0;
+    padding: 0;
+}
+.case-study-sidebar .case-study-client {
+}
+.case-study-sidebar a {
+    font-weight:  bold;
+}
+.case-study-images {
+    float:  left;
+    margin-bottom:  30px;
+}
+.case-study-images img {
+    margin-bottom:  30px;
+    box-shadow:  2px 5px 15px #d3d3d3;
+}
+

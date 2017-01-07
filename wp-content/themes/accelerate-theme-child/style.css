@@ -11,13 +11,16 @@
 */
 
 @import url("../accelerate-theme/style.css");
-
+/**********
+    Styling Changes   
+********/
+/*None to list*/
 /**********
     Nav
 *********/
 #masthead nav ul li {
     margin-right:  15px;
-/*These styles below keep nav pages at correct height. Do not change */
+/*These styles below keep nav page tabs at correct height. Do not change */
     float:  left;
     top:  0;
 }
@@ -37,7 +40,36 @@
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
-/* Recent Posts Section */
+/* Recent Case Studies Section */
+.featured-work {
+    margin-bottom:  40px;
+    height:  350px;
+}
+.featured-work h5 {
+    margin:  25px;
+    text-transform:  uppercase;
+}
+.featured-work ul {
+    list-style-type: none;
+    display:  block;
+    margin:  0 auto;
+}
+.featured-work ul li {
+    display:  block;
+    margin:  0 auto;
+    float:  left;
+    width: 250px;
+    margin-right: 70px;
+}
+/* Recent Blog Posts Section */
+.recent-posts {
+    border-top: 1px dotted #e3e1e1;
+    padding-top: 20px;
+    margin-top: 40px;
+    width:  72%;
+    display:  block;
+    margin:  0 auto;
+}
 .blog-post {
 	width: 50%;
 }
@@ -74,10 +106,20 @@
     padding: 0;
 }
 .case-study-sidebar .case-study-client {
-    padding-top:  5px;
+    margin-top:  25px;
+}
+.case-study-sidebar h2 {
+    font-size:  1.3em;
+}
+.case-study-sidebar .case-study-caption {
+    font-size:  0.85em;
 }
 .case-study-sidebar a {
     font-weight:  bold;
+}
+.case-study-desc {
+    margin-top: 20px;
+    font-size:  0.9em;
 }
 .case-study-images {
     float:  left;
@@ -89,4 +131,8 @@
     margin-bottom:  30px;
     box-shadow:  2px 5px 15px #d3d3d3;
 }
+.case-study-caption {
+    margin-top:  30px;
+}
+
 

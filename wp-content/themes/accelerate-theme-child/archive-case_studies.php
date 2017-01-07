@@ -1,15 +1,10 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * The template for displaying CASE STUDY ARCHIVE page.
  *
  * @package WordPress
- * @subpackage Accelerate Theme
- * @since Accelerate Theme 1.1
+ * @subpackage Accelerate Marketing
+ * @since Accelerate Marketing 1.0
  */
 
 get_header(); ?>
@@ -35,24 +30,15 @@ get_header(); ?>
                 <aside class="case-study-sidebar">
                     <h2><?php the_title(); ?></h2>
                     <p class="case-study-caption"><?php echo $services; ?></p>
-                    <p class="case-study-client">Client: <?php echo $client; ?></p>
 
-                    <p class="case-study-desc"><?php the_content(); ?></p>
+                    <div class="case-study-desc"><?php the_excerpt(); ?></div>
 
-                    <p><strong><a href="<?php echo $site_link; ?>">Site Link</a></strong></p>
+                    <h6><a href="<?php echo $site_link; ?>">View Site &rsaquo;</a></h6>
                 </aside>
 
                     <div class="case-study-images">
                         <?php if($image_1) { 
                             echo wp_get_attachment_image( $image_1, $size ); ?>
-                        <?php } ?>
-
-                        <?php if($image_2) { 
-                            echo wp_get_attachment_image( $image_2, $size ); ?>
-                        <?php } ?>
-
-                        <?php if($image_3) { 
-                            echo wp_get_attachment_image( $image_3, $size ); ?>
                         <?php } ?>
                     </div>
 				

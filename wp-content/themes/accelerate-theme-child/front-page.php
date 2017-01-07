@@ -26,6 +26,31 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
+<section class="featured-work">
+    <div class="site-content">
+        <h5>Featured Work</h5>
+        <ul>
+            <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+              <?php while ( have_posts() ) : the_post(); 
+                        // Variables for feaured work
+                        $image_1 = get_field("image_1");
+                        $size = "medium";
+                    ?>
+                <li>
+                    <figure>
+                        <?php echo wp_get_attachment_image($image_1, $size); ?>
+                    </figure>
+                    <h3><a href="<?php the_permalink(); ?>" class="read-more-link">
+                        <?php the_title(); ?>
+                    </a></h3>
+                </li> 
+              <?php endwhile; // end loop ?> 
+        <?php wp_reset_query(); // resets query ?>
+        </ul>
+        
+    </div>
+</section>
+
 <section class="recent-posts">
 	    <div class="site-content">
             <div class="blog-post">
@@ -36,9 +61,8 @@ get_header(); ?>
                         <h2><?php the_title(); ?></h2>
                         <?php the_excerpt(); ?> 
                         <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
-                        <!-- end -->
-                    <?php endwhile; ?> 
-                <?php wp_reset_query(); ?>
+                    <?php endwhile; // end loop ?> 
+                <?php wp_reset_query(); // resets query ?>
             </div>
 	    </div>
     </section>

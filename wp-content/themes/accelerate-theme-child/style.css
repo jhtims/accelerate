@@ -74,6 +74,7 @@
     padding: 0;
 }
 .case-study-sidebar .case-study-client {
+    padding-top:  5px;
 }
 .case-study-sidebar a {
     font-weight:  bold;
@@ -81,6 +82,8 @@
 .case-study-images {
     float:  left;
     margin-bottom:  30px;
+    width: 608px;
+    margin-top: 30px;
 }
 .case-study-images img {
     margin-bottom:  30px;

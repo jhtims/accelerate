@@ -16,8 +16,48 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
+
+<?php while ( have_posts() ) : the_post(); 
+
+ // Variables for Case Studies
+    $services = get_field('services'); 
+    $client = get_field('client');
+    $site_link = get_field('site_link');
+    $image_1 = get_field('image_1');
+    $image_2 = get_field('image_2');
+    $image_3 = get_field('image_3'); 
+    
+ // Needed for get_attachment
+    $size = "full"; ?>
+
+            <article class="case-study">
+
+                <aside class="case-study-sidebar">
+                    <h2><?php the_title(); ?></h2>
+                    <p class="case-study-caption"><?php echo $services; ?></p>
+                    <p class="case-study-client">Client: <?php echo $client; ?></p>
+
+                    <?php the_content(); ?>
+
+                    <p><strong><a href="<?php echo $site_link; ?>">Site Link</a></strong></p>
+                </aside>
+
+                    <div class="case-study-images">
+                        <?php if($image_1) { 
+                            echo wp_get_attachment_image( $image_1, $size ); ?>
+                        <?php } ?>
+
+                        <?php if($image_2) { 
+                            echo wp_get_attachment_image( $image_2, $size ); ?>
+                        <?php } ?>
+
+                        <?php if($image_3) { 
+                            echo wp_get_attachment_image( $image_3, $size ); ?>
+                        <?php } ?>
+                    </div>
+				
+            </article>
+
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->

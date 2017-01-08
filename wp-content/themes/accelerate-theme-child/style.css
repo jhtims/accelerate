@@ -19,10 +19,18 @@
     Nav
 *********/
 #masthead nav ul li {
-    margin-right:  15px;
+    margin-right:  45px;
+    text-transform:  uppercase;
+    letter-spacing:  0.1em;
 /*These styles below keep nav page tabs at correct height. Do not change */
     float:  left;
     top:  0;
+}
+#masthead li:hover {
+    border-bottom: 2px solid #fff;
+}
+#masthead nav ul .current-menu-item {
+    font-weight:  bold;
 }
 #masthead nav ul { 
     border: 1px solid transparent;
@@ -44,10 +52,14 @@
 .featured-work {
     margin-bottom:  40px;
     height:  350px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 .featured-work h5 {
     margin:  25px;
     text-transform:  uppercase;
+    text-align: center;
 }
 .featured-work ul {
     list-style-type: none;
@@ -55,11 +67,17 @@
     margin:  0 auto;
 }
 .featured-work ul li {
+    height:  auto;
     display:  block;
     margin:  0 auto;
     float:  left;
     width: 250px;
-    margin-right: 70px;
+    margin: 10px 37px 10px 30px;
+    text-align: center;
+}
+.featured-work img {
+    width:  100%;
+    height:  auto;
 }
 /* Recent Blog Posts Section */
 .recent-posts {

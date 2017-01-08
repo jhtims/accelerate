@@ -40,9 +40,9 @@ get_header(); ?>
                     <figure>
                         <?php echo wp_get_attachment_image($image_1, $size); ?>
                     </figure>
-                    <h3><a href="<?php the_permalink(); ?>" class="read-more-link">
+                    <h4><a href="<?php the_permalink(); ?>" class="read-more-link">
                         <?php the_title(); ?>
-                    </a></h3>
+                    </a></h4>
                 </li> 
               <?php endwhile; // end loop ?> 
         <?php wp_reset_query(); // resets query ?>

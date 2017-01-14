@@ -27,7 +27,7 @@
     top:  0;
 }
 #masthead li:hover {
-    border-bottom: 2px solid #fff;
+    font-weight:  bold;
 }
 #masthead nav ul .current-menu-item {
     font-weight:  bold;
@@ -109,6 +109,86 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+/* About Page Styles */
+.about-banner-img {
+    background: url(img/taxi-photo.jpg) no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
+    margin: 0 0 80px;
+    padding: 0;
+    height: 350px;
+    position: relative;
+}
+.about-banner-img .homepage-hero {
+   position: absolute;               
+   top: 50%; 
+   left:  50%;                        
+   transform: translate(-50%, -50%);
+}
+.about-banner-img .homepage-hero * {
+   text-align:  center;
+   line-height: 1.35em;
+   margin-top:  60px;
+}
+.homepage-hero h3 {
+    font-size: 1.7em;
+}
+.homepage-hero h3 a {
+    color:  #45ac9d;
+}
+.about-our-services {
+    text-align: center;
+    padding: 0 200px 0 200px;
+    margin-bottom:  50px;
+}
+.about-our-services h5 {
+    text-transform: uppercase;
+}
+.about-item {
+    height: 280px;
+}
+.about-item .about-item-img {
+    float: left;
+    margin: 40px 0px 0px 48px;
+}
+.about-item .about-item-desc {
+    float: left;
+    width: 600px;
+    margin-left: 50px;
+}
+.about-item .about-item-img-inv {
+    float: left;
+    margin: 40px 0 30px 30px;
+}
+/* About Callout */
+
+.about-callout {
+    border-top: 1px dotted #e3e1e1;
+    padding-top: 0px;
+    text-align:  center;
+}
+.callout-cntr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 653px;
+}
+.about-callout-desc {
+    float: left;
+    margin-right:  36px;
+    margin-top:  18px;
+    margin-bottom: 48px;
+}
+.about-callout .contact-us-btn a {
+    color:  #fff;
+}
+.contact-us-btn {
+    float: left;
+    background-color: #45ac9d;
+    color: #fff;
+    width: 10.5em;
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 0.5em;
+    margin-top: 40px;
+}
 
 /* Case Studies Styles */
 
@@ -151,6 +231,42 @@
 }
 .case-study-caption {
     margin-top:  30px;
+}
+
+/*Contact Styles*/
+.page-id-47351 #content {
+    width:  70%;
+    display:  block;
+    margin:  0 auto;
+}
+/*Contact Form*/
+#nf-field-1 {
+    height:  2.5em;
+}
+#nf-field-2 {
+    height:  2.5em;
+}
+#nf-field-3 {
+    height:  10.5em;
+}
+.nf-field-label {
+    font-size:  .8em;
+    color:  #666;
+}
+/* Send Button */
+#nf-form-1-cont #nf-field-4 {
+    float: right;
+    background-color:  #45ac9d;
+    color:  #fff;
+    width:  12.5em;
+    font-size:  1.05em;
+    font-weight:  600;
+    letter-spacing:  .1em;
+    padding:  1em;
+}
+ /* Confirmation Message */
+.nf-response-msg td {
+    padding:  15px;
 }
 
 
